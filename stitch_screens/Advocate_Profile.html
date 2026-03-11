@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3b8a",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121620",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Advocate Profile</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Header -->
+<header class="sticky top-0 z-10 flex items-center bg-white dark:bg-slate-900 p-4 border-b border-slate-200 dark:border-slate-800 justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h1 class="text-lg font-bold tracking-tight">Advocate Profile</h1>
+</div>
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</header>
+<main class="max-w-xl mx-auto pb-24">
+<!-- Profile Hero Section -->
+<section class="flex flex-col items-center p-6 bg-white dark:bg-slate-900 mb-2">
+<div class="relative">
+<div class="size-32 rounded-full border-4 border-primary/10 bg-center bg-cover" data-alt="Professional headshot of a male lawyer in a suit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOJnjpMKVACI17_4JwN9ojThiRxYhv2xNZkM12vEdIMex3tUa_UxcQv0Y4kNiVtasAclH69Fk7h08UouH0lnARyFQ4aLxBZb8QSAenLiQYFyNaYMRaykNdIUpFYK2gTrAJehBMRVSQ7erpdlt55aH2zzARDbKBoH6n5_b8w7SN7UNb3Wa1crMDPD_CWcoYG7k_MyrjFQAl_DsVwDfp6eLTpZ-GYvDTUuFDrPX3EVFKP751MZPVaqN5JThzG1url04yxkTOV2KzhiU");'>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary text-white p-1.5 rounded-full border-2 border-white dark:border-slate-900">
+<span class="material-symbols-outlined text-sm">edit</span>
+</div>
+</div>
+<div class="mt-4 text-center">
+<h2 class="text-2xl font-bold">Adv. Rajesh Kumar</h2>
+<p class="text-primary font-medium text-sm mt-1">Senior Litigation Counsel</p>
+<div class="mt-2 inline-flex items-center gap-1.5 px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full">
+<span class="material-symbols-outlined text-sm text-slate-500">verified</span>
+<span class="text-xs text-slate-600 dark:text-slate-400 font-medium">ID: KAR/1234/2015</span>
+</div>
+</div>
+</section>
+<!-- Specialization Areas -->
+<section class="p-4 bg-white dark:bg-slate-900 mb-2">
+<h3 class="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-3">Specialization Areas</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-lg">Corporate Law</span>
+<span class="px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-lg">Civil Litigation</span>
+<span class="px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-lg">IP Rights</span>
+<span class="px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-lg">Arbitration</span>
+</div>
+</section>
+<!-- Contact Details -->
+<section class="p-4 bg-white dark:bg-slate-900 mb-2">
+<h3 class="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-3">Contact Details</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-xs text-slate-500">Email Address</p>
+<p class="text-sm font-medium">rajesh.kumar@legalpro.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-xs text-slate-500">Phone Number</p>
+<p class="text-sm font-medium">+91 98765 43210</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-xs text-slate-500">Office Location</p>
+<p class="text-sm font-medium">High Court Chambers, Bangalore</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Subscription Plan Card -->
+<section class="p-4">
+<div class="bg-primary rounded-xl p-5 text-white shadow-lg relative overflow-hidden">
+<div class="absolute -right-8 -top-8 size-32 bg-white/10 rounded-full"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-white/80 text-xs font-medium uppercase tracking-widest">Current Plan</p>
+<h3 class="text-xl font-bold mt-1">Premium Pro</h3>
+</div>
+<span class="px-2 py-1 bg-white text-primary text-[10px] font-bold rounded uppercase">Active</span>
+</div>
+<p class="mt-4 text-sm text-white/90">Renew on Oct 24, 2024</p>
+<button class="mt-4 w-full py-2.5 bg-white text-primary font-bold rounded-lg text-sm shadow-sm">
+                        Manage Subscription
+                    </button>
+</div>
+</div>
+</section>
+<!-- Settings List -->
+<section class="px-4 space-y-2 mt-2">
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm">
+<!-- Team Settings -->
+<a class="flex items-center justify-between p-4 border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500">group</span>
+<span class="font-medium">Team Settings</span>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</a>
+<!-- App Settings -->
+<a class="flex items-center justify-between p-4 border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500">settings</span>
+<span class="font-medium">App Settings</span>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</a>
+<!-- Notifications -->
+<a class="flex items-center justify-between p-4 border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500">notifications</span>
+<span class="font-medium">Notifications</span>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</a>
+<!-- Privacy & Security -->
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500">lock</span>
+<span class="font-medium">Privacy &amp; Security</span>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</a>
+</div>
+<button class="w-full flex items-center justify-center gap-2 p-4 text-red-600 font-semibold bg-white dark:bg-slate-900 rounded-xl shadow-sm mt-4">
+<span class="material-symbols-outlined">logout</span>
+                Logout
+            </button>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 border-t border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md px-4 pb-6 pt-2 z-20">
+<div class="flex justify-between items-center max-w-xl mx-auto">
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">work</span>
+<span class="text-[10px] font-medium">Cases</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">task_alt</span>
+<span class="text-[10px] font-medium">Tasks</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

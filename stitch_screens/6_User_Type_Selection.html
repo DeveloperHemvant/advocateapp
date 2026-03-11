@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Select Account Type</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3b8a",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121620",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<header class="flex items-center p-4 pb-2 justify-between">
+<div class="text-slate-900 dark:text-slate-100 flex size-12 shrink-0 items-center cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full justify-center transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Registration</h2>
+</header>
+<main class="max-w-2xl mx-auto w-full px-4">
+<div class="text-center pb-8 pt-10">
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-3xl font-extrabold leading-tight mb-2">Select Account Type</h1>
+<p class="text-slate-500 dark:text-slate-400 text-base">Choose the option that best describes your legal practice</p>
+</div>
+<div class="space-y-6">
+<!-- Individual Advocate Card -->
+<div class="group relative flex flex-col items-stretch justify-start rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 cursor-pointer hover:border-primary transition-all duration-200 ring-offset-2 focus-within:ring-2 focus-within:ring-primary">
+<div class="flex items-start gap-5">
+<div class="flex size-14 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">person</span>
+</div>
+<div class="flex flex-col grow">
+<div class="flex items-center justify-between mb-1">
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight">Individual Advocate</h3>
+<div class="hidden group-hover:block text-primary">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-base leading-normal mb-4">Manage your personal legal practice, client cases, and independent advocacy work with dedicated tools.</p>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg mb-4" data-alt="Professional individual lawyer working at a modern desk" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIsWifAP6Qqi-bz8r91KPPsc-a0n6xQeWcqkA9pnQfG4uunngONjppHSabNgbNedNJAi2Bpx92kHzChzStQ7rBR_NH3jkl5DO2EAmAZDo4D7jZPCkv_mJrWsRqrLYriSggF3gOzvl6cEEmihrd1zfZ9lEuqxRLbiGF-OocW8KC4ATfqhRi6Sj7rc-gEguKWM5wPzx0qQmUZS2O24IbzxHVWMz496N0P12flrYvoxPWjE_7_FAO8EcloM4vAUVwxLz43mxg6zssAQc");'>
+</div>
+<button class="flex w-fit min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-white text-sm font-semibold transition-colors hover:bg-primary/90">
+<span>Select</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Law Firm Card -->
+<div class="group relative flex flex-col items-stretch justify-start rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 cursor-pointer hover:border-primary transition-all duration-200 ring-offset-2 focus-within:ring-2 focus-within:ring-primary">
+<div class="flex items-start gap-5">
+<div class="flex size-14 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">corporate_fare</span>
+</div>
+<div class="flex flex-col grow">
+<div class="flex items-center justify-between mb-1">
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight">Law Firm / Legal Team</h3>
+<div class="hidden group-hover:block text-primary">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-base leading-normal mb-4">Collaborate with your team, manage firm-wide cases, shared resources, and administrative roles.</p>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg mb-4" data-alt="Group of legal professionals collaborating in a bright boardroom" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4L591cP0Q6P63i4YvvP3y3qMQHIPBVWu6yWTLxB6j8bgfwn8bCIypRTSgrbhLeOfCYld5UqbSNCFAYLaZgM3h9Fhfxx5SOCjjrq1KUk_67afoHEkJUQlxWQrW6zxJG7PwcAqdSNzh6JZrCx1PdJPdYKPrmCZYK5vXMy72j6C3HRfAcxKJ72nG6YCW117n7yBlgcPH6dQzS-MaVExDUeIsBGzhqvRx8wDcIb1JNM-kGdc6JCtPp8KeK9P8AYbwE_N9J7T6fNpGl_U");'>
+</div>
+<button class="flex w-fit min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-white text-sm font-semibold transition-colors hover:bg-primary/90">
+<span>Select</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-10 pb-10">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-primary text-white text-lg font-bold leading-normal tracking-wide shadow-lg shadow-primary/20 hover:shadow-primary/30 active:scale-[0.98] transition-all">
+<span>Continue to Registration</span>
+</button>
+<p class="text-center text-slate-500 dark:text-slate-400 text-sm mt-4">
+                    Already have an account? <a class="text-primary font-semibold hover:underline" href="#">Log in here</a>
+</p>
+</div>
+</main>
+<footer class="h-10 bg-transparent"></footer>
+</div>
+</body></html>

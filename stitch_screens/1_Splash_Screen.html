@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Advocate AI - Loading</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3b8a",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121620",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-screen w-full flex-col items-center justify-center bg-gradient-to-br from-primary via-primary to-[#1e3b8a]/80 overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-white blur-3xl"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-white blur-3xl"></div>
+</div>
+<div class="flex flex-col items-center px-4 z-10">
+<div class="mb-8 p-6 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 shadow-2xl">
+<span class="material-symbols-outlined text-white !text-7xl" data-icon="gavel">gavel</span>
+</div>
+<h1 class="text-white tracking-tight text-[40px] font-bold leading-tight text-center pb-2">
+                Advocate AI
+            </h1>
+<p class="text-white/80 text-xl font-light tracking-wide text-center pb-12">
+                AI Assistant for Advocates
+            </p>
+<div class="w-64 flex flex-col gap-4">
+<div class="flex justify-between items-center mb-1">
+<span class="text-white/70 text-sm font-medium">Securing Workspace...</span>
+<span class="text-white/70 text-sm font-medium">35%</span>
+</div>
+<div class="h-1.5 w-full bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-white rounded-full" style="width: 35%;"></div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 text-center">
+<div class="flex items-center gap-2 justify-center text-white/40 mb-2">
+<span class="material-symbols-outlined !text-sm" data-icon="lock">lock</span>
+<span class="text-xs uppercase tracking-widest font-semibold">Enterprise Grade Security</span>
+</div>
+</div>
+</div>
+<div class="hidden">
+<div class="w-full bg-center bg-no-repeat bg-cover min-h-[218px]" data-alt="Modern abstract geometric patterns in shades of deep blue" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvs4pG6gZYTVBMRUmc6ZOXhg5h0qFOVgEK_VZwgYV_0vtAUZQKDSSUcqT9t0aSCIigE4O7_Scj-cRbdXqjkudzsZnIaXy1NoTUHiw7tt0BdfWJm1ub-xRrhEbwiUtxX_VuKw88sIa0zMZgbN2X1mLgDd5inKHutykfhi6PvoOKI8V0hDiDNxDuVLPNFuiKFza_hkhafWQmLMJucsZ60p_Cslv74y0YWvXT_7kJKn9ViRd6RxKVRaNtBtOWff7bBS9zjYYhfj5h5cE");'>
+</div>
+</div>
+</body></html>

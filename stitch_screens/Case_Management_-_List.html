@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3b8a",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121620",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Header Section -->
+<header class="sticky top-0 z-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 pt-6 pb-2">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="bg-primary/10 dark:bg-primary/20 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">gavel</span>
+</div>
+<h1 class="text-2xl font-bold tracking-tight">LegalConnect</h1>
+</div>
+<button class="size-10 flex items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+<!-- Search Bar -->
+<div class="relative w-full">
+<label class="flex items-center h-12 w-full bg-white dark:bg-slate-800 rounded-xl px-4 shadow-sm border border-slate-200 dark:border-slate-700">
+<span class="material-symbols-outlined text-slate-400 mr-2">search</span>
+<input class="w-full bg-transparent border-none focus:ring-0 text-base placeholder:text-slate-400" placeholder="Search cases by title or ID" type="text"/>
+</label>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-2 py-4 overflow-x-auto no-scrollbar">
+<button class="flex h-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-white px-5 text-sm font-semibold">
+                    Active
+                </button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-5 text-sm font-medium">
+                    Pending
+                </button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-5 text-sm font-medium">
+                    Closed
+                </button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-5 text-sm font-medium">
+                    Archived
+                </button>
+</div>
+</header>
+<!-- Main Content: Case List -->
+<main class="flex-1 px-4 pb-24">
+<div class="space-y-4">
+<!-- Case Card 1 -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<h3 class="text-lg font-bold leading-tight">Acme vs Zenith</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">ID: #L-98432</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold uppercase tracking-wide">Active</span>
+</div>
+<div class="flex items-center gap-4 pt-2 border-t border-slate-50 dark:border-slate-700">
+<div class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span class="text-sm">Hearing: Oct 24, 2023</span>
+</div>
+<div class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">person</span>
+<span class="text-sm">Lead: J. Doe</span>
+</div>
+</div>
+</div>
+<!-- Case Card 2 -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<h3 class="text-lg font-bold leading-tight">State vs Thompson</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">ID: #C-22109</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold uppercase tracking-wide">Active</span>
+</div>
+<div class="flex items-center gap-4 pt-2 border-t border-slate-50 dark:border-slate-700">
+<div class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span class="text-sm">Hearing: Nov 02, 2023</span>
+</div>
+<div class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">person</span>
+<span class="text-sm">Lead: M. Ross</span>
+</div>
+</div>
+</div>
+<!-- Case Card 3 -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<h3 class="text-lg font-bold leading-tight">Miller Estates Registry</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">ID: #P-88271</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold uppercase tracking-wide">Active</span>
+</div>
+<div class="flex items-center gap-4 pt-2 border-t border-slate-50 dark:border-slate-700">
+<div class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span class="text-sm">Hearing: Nov 15, 2023</span>
+</div>
+<div class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">person</span>
+<span class="text-sm">Lead: A. Vance</span>
+</div>
+</div>
+</div>
+<!-- Case Card 4 -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<h3 class="text-lg font-bold leading-tight">TechCorp Patent Dispute</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">ID: #L-10293</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold uppercase tracking-wide">Active</span>
+</div>
+<div class="flex items-center gap-4 pt-2 border-t border-slate-50 dark:border-slate-700">
+<div class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span class="text-sm">Hearing: Dec 01, 2023</span>
+</div>
+<div class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">person</span>
+<span class="text-sm">Lead: K. Specter</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-6 size-14 bg-primary text-white rounded-full shadow-lg shadow-primary/40 flex items-center justify-center hover:scale-105 transition-transform z-30">
+<span class="material-symbols-outlined !text-3xl">add</span>
+</button>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 px-6 pb-6 pt-3">
+<div class="flex justify-between items-center max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">work</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Cases</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Calendar</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .fill-1 {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</body></html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3b8a",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121620",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Create New Case</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="max-w-2xl mx-auto min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 py-4 flex items-center justify-between border-b border-primary/10">
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight">Create New Case</h1>
+</div>
+<button class="text-primary font-semibold text-sm px-4 py-2 hover:bg-primary/5 rounded-lg">Cancel</button>
+</header>
+<main class="flex-1 overflow-y-auto p-4 space-y-8 pb-32">
+<!-- Case Details Section -->
+<section class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-xl">description</span>
+<h2 class="text-lg font-bold">Case Details</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="col-span-1 md:col-span-2">
+<label class="block text-sm font-medium mb-1.5 opacity-80">Case Title</label>
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-primary/20 rounded-xl px-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-400" placeholder="e.g. Smith vs. TechCorp Intellectual Property" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="block text-sm font-medium mb-1.5 opacity-80">Client Name</label>
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-primary/20 rounded-xl px-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-400" placeholder="Full legal name" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="block text-sm font-medium mb-1.5 opacity-80">Case Type</label>
+<div class="relative">
+<select class="w-full h-14 appearance-none bg-white dark:bg-slate-800 border border-primary/20 rounded-xl px-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all cursor-pointer">
+<option disabled="" selected="" value="">Select category</option>
+<option value="civil">Civil Litigation</option>
+<option value="criminal">Criminal Defense</option>
+<option value="family">Family Law</option>
+<option value="corporate">Corporate</option>
+<option value="ip">Intellectual Property</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none opacity-50">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="block text-sm font-medium mb-1.5 opacity-80">Opposition Name</label>
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-primary/20 rounded-xl px-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-400" placeholder="Counterparty name" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="block text-sm font-medium mb-1.5 opacity-80">Opposition Lawyer <span class="text-xs font-normal opacity-60">(Optional)</span></label>
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-primary/20 rounded-xl px-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-400" placeholder="Representing counsel" type="text"/>
+</div>
+</div>
+</section><section class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-xl">gavel</span>
+<h2 class="text-lg font-bold">Court Information</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="col-span-1 md:col-span-2">
+<label class="block text-sm font-medium mb-1.5 opacity-80">Court Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 opacity-40">account_balance</span>
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-primary/20 rounded-xl pl-12 pr-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-400" placeholder="e.g. Superior Court of California" type="text"/>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="block text-sm font-medium mb-1.5 opacity-80">Courtroom Number</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 opacity-40">tag</span>
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-primary/20 rounded-xl pl-12 pr-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-400" placeholder="e.g. Dept. 45" type="text"/>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="block text-sm font-medium mb-1.5 opacity-80">Presiding Judge(s)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 opacity-40">person</span>
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-primary/20 rounded-xl pl-12 pr-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-400" placeholder="Hon. Jane Doe" type="text"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Assign Team Section -->
+<section class="space-y-4">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">group</span>
+<h2 class="text-lg font-bold">Assign Team Member</h2>
+</div>
+<button class="text-sm text-primary font-medium">Add New</button>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-2 -mx-1 px-1 scrollbar-hide">
+<div class="flex flex-col items-center gap-2 shrink-0 group">
+<div class="size-14 rounded-full border-2 border-primary p-0.5">
+<img class="size-full rounded-full object-cover" data-alt="Professional female lawyer portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYV7mGavoGSDOp5AiZmIOH219wRPLuWTq1y3vBsVIbN7nr2dqq11nmiyo0raUwJ2OUq-6urkrdFZI-vRHTMrFtHnyK7n5wEUH9MxBcymQTQhbsVuxci2YQTJ-gCwd_IpliearPuNUajHzG5CrzDdAra1aCQzkzg0VrfbIFZGjKjROzMPSqYQSApWMa_XtznJH8d0iv_17kzX3Q6H7V8imIwlYAcXLC5GnLvgCHUXtH1FaXGxEqIMEPuwJnzwN8aIWkSsQOH3e0dck"/>
+</div>
+<span class="text-xs font-medium text-primary">Lead</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0 group">
+<div class="size-14 rounded-full border border-primary/10 p-0.5">
+<img class="size-full rounded-full object-cover" data-alt="Professional male lawyer portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzzz_K6eKp4mG0RbaGEisdbPAJPmsmh7eUJJjA1CcQghqBHF5uiBE0EJ8a5gviCH_zS2ln0aeuNUZyrOQcMXWLQSoz7m-yrJeZLv6q55ByOpNd7CIkxcLY1eROZLtYOg0xeKXzZJdp0VLqPVdHXqCtiLvxCIw7H3ykgaWAuNQPuUy2ie-tAXTIjSNyvqxPQINLE7CMdwuJo4HGR_TnuELdY7jTwVc5DXrJDB-ih3fgKs3-bi_BMvYJMT4PgT-XIgKz-NlgGiHsR0o"/>
+</div>
+<span class="text-xs font-medium opacity-60">Marcus</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0 group">
+<div class="size-14 rounded-full border border-primary/10 p-0.5">
+<img class="size-full rounded-full object-cover" data-alt="Female legal assistant portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1CyjthPl0d183I8WwPpYYHW3TsBG9N_o1rNh2EUprLMucPZXVa3HYc_UL4hekkQOTp8TyLBbF0fIkqihzm5xABCaiRSP2OfZ5hvYJDtIJihP2uZr1XG09az5QKgjvhsYPZqgWZeIsZKc_7ZiKXLJem9QOJ-j9yZ2YH0tSOaBmXK4MqIbNyiBs2x_sp5_Nux-btvxGFgoEllzXh96jI2KDSLxA7KgfpFlK9Taw8_k9q7yCwztBAmI_SWrTz_LazHO2vHEXdkLPQp0"/>
+</div>
+<span class="text-xs font-medium opacity-60">Sarah</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0 group">
+<div class="size-14 rounded-full border border-primary/10 p-0.5">
+<img class="size-full rounded-full object-cover" data-alt="Male associate attorney portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDssIJHleHGyolBoUzZ98jCwlDxzqSITtfbvYo_V7Cx4E7fWrD-7gyTEr1LWnmJ7fJh0KjPre7mWLUVD9f9drlQb0WZqv1Fk8zSojQiUAh6BIZ1YGfWzaVBVxqbbIqQ7WsS5NM64zlM3gAmrh9RWseZOY7g89Ps_0mRh8DQTPlpGHMHNt9ixrKtypOhukShSDkv_TWvDttDgj9nM3Gdl9TuntUuIdIifHISQvZfXTxNeAJ-B2SAJZwhH63u1aUGK-E1lBmuYIZX3_8"/>
+</div>
+<span class="text-xs font-medium opacity-60">James</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0 group">
+<div class="size-14 rounded-full border-2 border-dashed border-primary/20 flex items-center justify-center bg-white dark:bg-slate-800">
+<span class="material-symbols-outlined text-primary/40">person_add</span>
+</div>
+<span class="text-xs font-medium opacity-40">Invite</span>
+</div>
+</div>
+</section>
+<!-- Initial Documents & Tasks Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<section class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">upload_file</span>
+<h2 class="text-lg font-bold">Initial Documents</h2>
+</div>
+<div class="border-2 border-dashed border-primary/20 rounded-xl p-6 bg-primary/5 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">cloud_upload</span>
+<p class="text-sm font-semibold">Click to upload files</p>
+<p class="text-xs opacity-60 mt-1">PDF, DOCX or PNG (max. 10MB)</p>
+</div>
+</section>
+<section class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">task_alt</span>
+<h2 class="text-lg font-bold">Initial Task</h2>
+</div>
+<div>
+<textarea class="w-full h-32 bg-white dark:bg-slate-800 border border-primary/20 rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-400 resize-none" placeholder="Assign the first immediate action..."></textarea>
+</div>
+</section>
+</div>
+</main>
+<!-- Create Case Button Footer -->
+<footer class="fixed bottom-0 left-0 right-0 p-4 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-primary/10">
+<div class="max-w-2xl mx-auto">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
+<span class="material-symbols-outlined">add_circle</span>
+                    Create Case
+                </button>
+</div>
+</footer>
+</div>
+</body></html>

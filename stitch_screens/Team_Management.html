@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Team Management - Legal AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3b8a",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121620",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-10 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center px-4 py-4 justify-between max-w-5xl mx-auto w-full">
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight">Team Management</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="relative flex items-center justify-center size-10 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
+</button>
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional profile picture of the lead advocate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7ZS-fkQTYtGZOWa8SAna_ezxMEq-SwaDN_uNUtSNc5qyNHz63U532kW1pP4gDcKqUbgTVZ9sN546nWRdo4jlsttGkAehfF5C_CuZVKueYPxHfk4vGR-8kmv1mnc-rZJW1oMUX3-XRZZ92u-JN6zrUX1GVnQfIdg86VsUB-HbU7cxByJoZx12tyl7zMSv5n5C6gcA1QkKVHS2VeIcWFIhqx5RpKwyRl1kila8uamsMHIIg5N6EMdFrpIc2ttw-eHlBwKC2IZSDwe0"/>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-5xl mx-auto w-full p-4 space-y-8">
+<!-- Add Member Section -->
+<section class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
+<div class="p-6 border-b border-slate-100 dark:border-slate-800">
+<h2 class="text-lg font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">person_add</span>
+                    Add Team Member
+                </h2>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Invite a new professional to your legal practice team.</p>
+</div>
+<div class="p-6">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="flex flex-col gap-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Full Name</label>
+<input class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="e.g. Sarah Jenkins" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Email Address</label>
+<input class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="sarah.j@legalfirm.com" type="email"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Role</label>
+<select class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+<option>Junior Advocate</option>
+<option>Paralegal</option>
+<option>Secretary</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Permission Level</label>
+<select class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+<option>View Only</option>
+<option>Editor</option>
+<option>Admin Access</option>
+</select>
+</div>
+<div class="md:col-span-2 flex justify-end pt-2">
+<button class="bg-primary text-white px-8 py-2.5 rounded-lg font-bold hover:bg-primary/90 transition-all flex items-center gap-2" type="button">
+<span>Send Invitation</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+<!-- Team List Section -->
+<section class="space-y-4">
+<div class="flex items-center justify-between px-1">
+<h2 class="text-xl font-bold">Current Team Members</h2>
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full">4 Active</span>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<!-- Member 1 -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-primary/30 transition-all shadow-sm">
+<div class="shrink-0">
+<div class="size-14 rounded-full bg-cover bg-center" data-alt="Profile photo of Aarav Sharma" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDieKCZHsmtn4Vhj1ARiT92lCYJ0mujWxAO8D2N_FKfyiBF-AlJCUHSne4W-5HL-wP6Vfs3XE9XviuNOudfXnXt7N04zQgv3ZPiNUM8XEZDpdJAsE0wIZG_QDOlum8sELFABazFJgyJuZ-17PKy_cfmcv80c3mMOcvxKnqNpiYe5yIExmvRsehFI-sfstS0tnqCMDB-hWo8act0pATaCdOjgFHaRU4AdyDZ1cEv8wCoK_uOhLori1QWEU4VxwzoCDaD2qkLhrWw8_A");'></div>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-base font-bold leading-none mb-1">Aarav Sharma</p>
+<p class="text-sm text-slate-500 dark:text-slate-400 truncate">aarav.s@legalai.com</p>
+</div>
+<div class="hidden sm:flex flex-col items-end shrink-0 px-4">
+<span class="text-sm font-medium">Junior Advocate</span>
+<span class="text-xs text-slate-500">Admin</span>
+</div>
+<div class="shrink-0 flex gap-2">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+<button class="p-2 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+<!-- Member 2 -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-primary/30 transition-all shadow-sm">
+<div class="shrink-0">
+<div class="size-14 rounded-full bg-cover bg-center" data-alt="Profile photo of Ishani Gupta" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCzifAQyIiRkMeTKCuhIpewc_nqU2bujrpjGTRbDFpA0zIlaBLsBFBVHy0sADkOqDc3cRGHMtjSngyLXVbz96YLAckl2vS6nDZi_mszjZAk2KgUYeUjcrt2-Vj4xRWbLDfNPOj5JWt2ce0IQjYS9nR4NyleVHf7IQcUnuxq5ZmObnY4L4fwoUSow_kJkNmPRpYay345tOmN_HBhWFL_nB1z7K0c--TI6gtfIakJq1Khvtccrw_E2wBGwo3w7rNMTbaIVleK1JDSzLA");'></div>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-base font-bold leading-none mb-1">Ishani Gupta</p>
+<p class="text-sm text-slate-500 dark:text-slate-400 truncate">ishani.g@legalai.com</p>
+</div>
+<div class="hidden sm:flex flex-col items-end shrink-0 px-4">
+<span class="text-sm font-medium">Paralegal</span>
+<span class="text-xs text-slate-500">Editor</span>
+</div>
+<div class="shrink-0 flex gap-2">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+<button class="p-2 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+<!-- Member 3 -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-primary/30 transition-all shadow-sm">
+<div class="shrink-0">
+<div class="size-14 rounded-full bg-cover bg-center" data-alt="Profile photo of Marcus Chen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVK5SUl7MhLO6nrtx8mhrGGZ8o49C9li_T0ddZ5WVvpoJWWVoJVYCKdHqInL-WQoB7P46ffBG8PfEsr284pDr75MLz43xXN_B6ldn0jzCQH0JX9hPYVdXzloFJmR58uqI4sW3Hhu9PzjfBYhu6W32ihdKk3b1bVqc2k689bAyTz6lj4-R7hcDtAUm7egmHGX8a4JMot4F1hqC1R_dS3n0Bubht9RoRtGWeqjemkFx7nJlA1d8cfeFqz0nOLRasw62efqWNlOga0_M");'></div>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-base font-bold leading-none mb-1">Marcus Chen</p>
+<p class="text-sm text-slate-500 dark:text-slate-400 truncate">marcus.c@legalai.com</p>
+</div>
+<div class="hidden sm:flex flex-col items-end shrink-0 px-4">
+<span class="text-sm font-medium">Secretary</span>
+<span class="text-xs text-slate-500">View Only</span>
+</div>
+<div class="shrink-0 flex gap-2">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+<button class="p-2 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation -->
+<nav class="sticky bottom-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 px-4 pb-6 pt-2">
+<div class="max-w-md mx-auto flex items-center justify-around">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">work</span>
+<span class="text-xs font-medium">Cases</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">group</span>
+<span class="text-xs font-bold">Team</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-xs font-medium">Settings</span>
+</a>
+</div>
+</nav>
+<style>
+        .fill-1 { font-variation-settings: 'FILL' 1; }
+    </style>
+</body></html>

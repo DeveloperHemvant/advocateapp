@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome - AI Assistant for Advocates</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3b8a",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#121620",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+<!-- Main Container -->
+<div class="relative flex h-screen w-full flex-col justify-between overflow-hidden">
+<!-- Top App Bar / Brand Header -->
+<header class="flex items-center justify-between p-6 md:p-8">
+<div class="flex items-center gap-2">
+<div class="bg-primary rounded-lg p-1.5 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="gavel">gavel</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-primary">LexAI</span>
+</div>
+<div>
+<button class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Help Center</button>
+</div>
+</header>
+<!-- Hero Content Section -->
+<main class="flex-1 flex flex-col items-center justify-center px-6 max-w-5xl mx-auto w-full">
+<!-- Illustration Wrapper -->
+<div class="w-full max-w-2xl mb-10 relative">
+<div class="aspect-[16/9] w-full rounded-2xl overflow-hidden bg-primary/5 dark:bg-primary/20 shadow-2xl shadow-primary/10 border border-primary/10 flex items-center justify-center">
+<img alt="Professional lawyer collaborating with digital AI assistant interface" class="w-full h-full object-cover" data-alt="Professional lawyer collaborating with digital AI assistant interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiZK3CiYuYxVzhSOZWwVF8JRxE8Wy7_EglHoTMaD4zFratzFggzN-s3Haay9Z6UQFZ4m9xI7SfvvQsDc_e-alho0sQYLMMbaIA2bfATcWAH15fUYaMIjI3NyLZV6ZgelGZa5mYmGxyScxNgiXmTmrGmyAqkKInSJZFDaKJzdWj8j3LMDnoVPhnbSulesjowvN1SkktSwEhQc3UGLaRLDGiVltV4CtIfGdE0Ptu9YpoLpudwmpluPb7RZomAKiwQO0QztCve35EE9c"/>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+</div>
+<!-- Text Content -->
+<div class="text-center space-y-4 max-w-2xl">
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-slate-50">
+                    AI Assistant for Advocates
+                </h1>
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 font-normal leading-relaxed">
+                    Draft cases, manage hearings, and organize legal work efficiently with our intelligent litigation partner.
+                </p>
+</div>
+<!-- Action Buttons -->
+<div class="mt-12 flex flex-col sm:flex-row gap-4 w-full max-w-md">
+<button class="flex-1 flex h-14 items-center justify-center rounded-xl bg-primary text-white text-lg font-semibold shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all active:scale-[0.98]">
+                    Create Account
+                </button>
+<button class="flex-1 flex h-14 items-center justify-center rounded-xl bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary text-lg font-semibold hover:bg-primary/20 transition-all active:scale-[0.98]">
+                    Login
+                </button>
+</div>
+</main>
+<!-- Footer Stats / Trust Badges -->
+<footer class="p-8">
+<div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="security">security</span>
+<span class="text-sm font-medium">Enterprise Security</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+<span class="text-sm font-medium">Bar Compliant</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="cloud_done">cloud_done</span>
+<span class="text-sm font-medium">Cloud Sync</span>
+</div>
+</div>
+<div class="mt-8 text-center">
+<p class="text-xs text-slate-400 dark:text-slate-500">
+                    © 2024 AI Assistant for Advocates. All legal data is encrypted and private.
+                </p>
+</div>
+</footer>
+</div>
+</body></html>

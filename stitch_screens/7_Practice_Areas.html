@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onboarding - Practice Areas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3b8a",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121620",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col max-w-md mx-auto bg-white dark:bg-slate-900 shadow-xl overflow-x-hidden">
+<!-- TopAppBar -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-slate-900 dark:text-slate-100 flex size-12 shrink-0 items-center cursor-pointer hover:bg-primary/10 rounded-full transition-colors" data-icon="arrow_back">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Onboarding</h2>
+</div>
+<!-- Progress Indicator -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-6">
+<div class="h-2 w-8 rounded-full bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-primary/20 dark:bg-primary/30"></div>
+<div class="h-2 w-2 rounded-full bg-primary/20 dark:bg-primary/30"></div>
+</div>
+<!-- Content Header -->
+<div class="px-6 pt-4">
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-[32px] font-bold leading-tight pb-3">What is your specialty?</h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed">Select the practice areas you specialize in. You can choose more than one.</p>
+</div>
+<!-- Practice Areas Selection Grid -->
+<div class="grid grid-cols-2 gap-3 p-6">
+<!-- Chip: Civil -->
+<button class="flex h-14 items-center justify-start gap-x-3 rounded-xl border-2 border-primary bg-primary/5 px-4 transition-all">
+<span class="material-symbols-outlined text-primary">gavel</span>
+<span class="text-slate-900 dark:text-slate-100 text-sm font-semibold">Civil</span>
+</button>
+<!-- Chip: Criminal -->
+<button class="flex h-14 items-center justify-start gap-x-3 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 px-4 hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-slate-500">balance</span>
+<span class="text-slate-900 dark:text-slate-100 text-sm font-semibold">Criminal</span>
+</button>
+<!-- Chip: Corporate -->
+<button class="flex h-14 items-center justify-start gap-x-3 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 px-4 hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-slate-500">business_center</span>
+<span class="text-slate-900 dark:text-slate-100 text-sm font-semibold">Corporate</span>
+</button>
+<!-- Chip: Family -->
+<button class="flex h-14 items-center justify-start gap-x-3 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 px-4 hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-slate-500">family_restroom</span>
+<span class="text-slate-900 dark:text-slate-100 text-sm font-semibold">Family</span>
+</button>
+<!-- Chip: Property -->
+<button class="flex h-14 items-center justify-start gap-x-3 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 px-4 hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-slate-500">domain</span>
+<span class="text-slate-900 dark:text-slate-100 text-sm font-semibold">Property</span>
+</button>
+<!-- Chip: Labour -->
+<button class="flex h-14 items-center justify-start gap-x-3 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 px-4 hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-slate-500">engineering</span>
+<span class="text-slate-900 dark:text-slate-100 text-sm font-semibold">Labour</span>
+</button>
+</div>
+<!-- Decorative Spacer -->
+<div class="flex-grow"></div>
+<!-- Bottom Action -->
+<div class="p-6 pb-10">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/25 flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span>Next</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<p class="text-center text-slate-400 text-xs mt-4">Step 1 of 3</p>
+</div>
+</div>
+</body></html>

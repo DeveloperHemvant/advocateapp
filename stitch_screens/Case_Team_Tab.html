@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3b8a",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121620",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Case Team Details</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col max-w-md mx-auto bg-background-light dark:bg-background-dark overflow-x-hidden shadow-2xl">
+<!-- Header -->
+<div class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md z-10">
+<div class="text-slate-900 dark:text-slate-100 flex size-10 shrink-0 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center">Case CIV-2023-089</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary text-white hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined">person_add</span>
+</button>
+</div>
+</div>
+<!-- Tabs -->
+<div class="px-4 sticky top-[64px] bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md z-10">
+<div class="flex border-b border-slate-200 dark:border-slate-800 overflow-x-auto no-scrollbar">
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 dark:text-slate-400 pb-3 pt-4 px-3 min-w-fit" href="#">
+<p class="text-sm font-semibold">Overview</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 dark:text-slate-400 pb-3 pt-4 px-3 min-w-fit" href="#">
+<p class="text-sm font-semibold">Documents</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-primary text-primary pb-3 pt-4 px-3 min-w-fit" href="#">
+<p class="text-sm font-bold">Team</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 dark:text-slate-400 pb-3 pt-4 px-3 min-w-fit" href="#">
+<p class="text-sm font-semibold">Tasks</p>
+</a>
+</div>
+</div>
+<!-- Content -->
+<div class="flex-1 pb-24 overflow-y-auto">
+<!-- Lead Counsel Section -->
+<div class="px-4 pt-6 pb-4">
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-wider mb-4 opacity-70">Lead Counsel</h3>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl p-4 flex items-center gap-4 border border-primary/10 shadow-sm">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 border-2 border-primary/20" data-alt="Professional headshot of male lawyer David Chen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdVj6Aw2G5EcQY9EVvjFF1t71951xs3ptipkzjwnC71oKJ8_XaDxq7a1iFjd7qxnLCPXVlpWBMLKv2e0hxSUX1EYbbiZqh86sFzb2nm3q4HdX_RThf7SjfPc38ABfI3NdjdupYnPNBLlNKcCEE24D3BDjbOQq_Bcpt0op9QAbVHjYXc7SyIFjszNZ7i0Be2wvyU2ECWzcgJASOCH85NzbN0Ejbrs6SXUNUUDirsE3a4BOkJmGPAX19aO7WlvT3bIP3w_zB6xC4rTM");'></div>
+<div class="absolute bottom-0 right-0 size-4 rounded-full bg-green-500 border-2 border-white dark:border-slate-800"></div>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-2">
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold">David Chen</p>
+<span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">Lead</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Senior Partner &amp; Counsel</p>
+</div>
+<div class="flex gap-2">
+<button class="flex size-9 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-xl">mail</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Team Members List -->
+<div class="px-4 py-4">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-wider opacity-70">Internal Team</h3>
+<span class="text-xs font-medium text-primary">3 Members</span>
+</div>
+<div class="space-y-3">
+<!-- Member 1 -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800/40 p-3 rounded-xl border border-slate-100 dark:border-slate-800">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" data-alt="Portrait of Sarah Jenkins, legal assistant" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGNYtr97j8WNiqKL23Hj_ZdZLt--If_szgu_TcN5legfcM5mcE-s7tFo4lWp_EsPFGT0_8m0Z0tawcbdkHfSbexuCCa2nyJG_jAYvPaXHabr8_mi45TKLfS_9JHuxP4FI7ETY7ZzCc-DkSbErkWpa90zL5ICOd9vl7_atekXknf4eZ5uoGMc_eOo8Bejhv-BOxHxWf_Xnq94bSlNYwbEDRpAjv7Fd3REpbP5GjwZQUBdHRuZs2ABXxSigDZEPu3q7MXkazIMV3UMU");'></div>
+<div class="flex flex-col flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">Sarah Jenkins</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Legal Assistant</p>
+</div>
+<div class="flex gap-1">
+<button class="flex size-8 items-center justify-center rounded-lg bg-slate-50 dark:bg-slate-700/50 text-primary">
+<span class="material-symbols-outlined text-lg">chat_bubble</span>
+</button>
+<button class="flex size-8 items-center justify-center rounded-lg bg-slate-50 dark:bg-slate-700/50 text-primary">
+<span class="material-symbols-outlined text-lg">add_task</span>
+</button>
+</div>
+</div>
+<!-- Member 2 -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800/40 p-3 rounded-xl border border-slate-100 dark:border-slate-800">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" data-alt="Portrait of Marcus Chen, junior advocate" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArtY5sumYzhqPjO7z0p8CmROfI3bHYt1bLp-iSbCFzfpRa9Ef6OcfFm-JaPYqc-DGSKa8UT2r0NrDduASoOvfogmUwdq0xE1x_KhH9xTUHgZA7-D8_voetP4WTAdGWMsTsNvWNQu3IV52Is6SpYCCWP7l-OkdENhUGI5LDqUjPS4GOK28rtWGGtjy2XpJmN6s8ZBQMf8rXIho7hz4FiWgBUGpwfPUAdTOjvrOFL1f-LEwQe1ovZ3aSmSWgpbJqkf6w7bTa4Fn4LC0");'></div>
+<div class="flex flex-col flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">Marcus Chen</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Junior Advocate</p>
+</div>
+<div class="flex gap-1">
+<button class="flex size-8 items-center justify-center rounded-lg bg-slate-50 dark:bg-slate-700/50 text-primary">
+<span class="material-symbols-outlined text-lg">chat_bubble</span>
+</button>
+<button class="flex size-8 items-center justify-center rounded-lg bg-slate-50 dark:bg-slate-700/50 text-primary">
+<span class="material-symbols-outlined text-lg">add_task</span>
+</button>
+</div>
+</div>
+<!-- Member 3 -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800/40 p-3 rounded-xl border border-slate-100 dark:border-slate-800">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" data-alt="Portrait of Ishani Gupta, research intern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgAxQJqg1vzPCpIO6CV-uJkI6hno9YOW-GP5eWxUABnAQfaTx7EWx0FLBZWaP6KMlkSuVfBd9W3X_fJ5ybnOvJ5BFSrFRO9fujSNC4PMKSJw1J8uYBgatTiCcd_Z0drUotLOCzj39e5Ex4EaC3Io6-pMqD3kOfjthEvBjfxvjQOMCwlzrQuNkm3zfdz-8y1IczFa2yBSXBYbJIY9Dp0oVEo_1DCvoEyRfsk1xkaf4yN5CTdS0OWsz38EiSmHHHTwKxReelVIdbRRc");'></div>
+<div class="flex flex-col flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">Ishani Gupta</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Research Intern</p>
+</div>
+<div class="flex gap-1">
+<button class="flex size-8 items-center justify-center rounded-lg bg-slate-50 dark:bg-slate-700/50 text-primary">
+<span class="material-symbols-outlined text-lg">chat_bubble</span>
+</button>
+<button class="flex size-8 items-center justify-center rounded-lg bg-slate-50 dark:bg-slate-700/50 text-primary">
+<span class="material-symbols-outlined text-lg">add_task</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- External Collaborators -->
+<div class="px-4 py-4">
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-wider mb-4 opacity-70">External Counsel</h3>
+<div class="flex items-center gap-4 bg-primary/5 dark:bg-primary/10 p-3 rounded-xl border border-dashed border-primary/30">
+<div class="bg-slate-200 dark:bg-slate-700 rounded-full h-12 w-12 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">corporate_fare</span>
+</div>
+<div class="flex flex-col flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">Evergreen Law Firm</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Associate Partner (External)</p>
+</div>
+<button class="text-primary text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-primary/10">View Profile</button>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto z-50">
+<div class="flex gap-2 border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-4 pb-6 pt-3">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined">dashboard</span>
+</div>
+<p class="text-[10px] font-medium leading-normal tracking-tight">Dashboard</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">work</span>
+</div>
+<p class="text-[10px] font-bold leading-normal tracking-tight">Cases</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined">calendar_today</span>
+</div>
+<p class="text-[10px] font-medium leading-normal tracking-tight">Calendar</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined">settings</span>
+</div>
+<p class="text-[10px] font-medium leading-normal tracking-tight">Settings</p>
+</a>
+</div>
+</div>
+</div>
+</body></html>

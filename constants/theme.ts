@@ -1,41 +1,116 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ * Advocate AI / LexAI design system.
+ * Matches stitch_screens: primary #1e3b8a, background-light #f8fafc / #f6f6f8, background-dark #121620.
  */
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
+const tintColorLight = '#1e3b8a';
 const tintColorDark = '#fff';
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
+    text: '#0F172A',
+    textSecondary: '#475569',
+    textMuted: '#64748b',
+    background: '#f8fafc',
+    backgroundAlt: '#f6f6f8',
+    backgroundCard: '#ffffff',
     tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
+    primary: '#1e3b8a',
+    primaryFaded: 'rgba(30, 59, 138, 0.1)',
+    secondary: '#2563eb',
+    accent: '#f59e0b',
+    accentFaded: 'rgba(245, 158, 11, 0.1)',
+    icon: '#64748b',
+    tabIconDefault: '#64748b',
     tabIconSelected: tintColorLight,
+    border: '#e2e8f0',
+    borderCard: 'rgba(226, 232, 240, 0.6)',
+    inputBg: '#f1f5f9',
+    success: '#16a34a',
+    successBg: '#dcfce7',
+    warning: '#ea580c',
+    warningBg: '#ffedd5',
+    error: '#dc2626',
+    errorBg: '#fee2e2',
+    slate: {
+      50: '#f8fafc',
+      100: '#f1f5f9',
+      200: '#e2e8f0',
+      300: '#cbd5e1',
+      400: '#94a3b8',
+      500: '#64748b',
+      600: '#475569',
+      700: '#334155',
+      800: '#1e293b',
+      900: '#0F172A',
+    },
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
+    text: '#f8fafc',
+    textSecondary: '#94a3b8',
+    textMuted: '#64748b',
+    background: '#121620',
+    backgroundAlt: '#121620',
+    backgroundCard: '#0F172A',
     tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
+    primary: '#3b82f6',
+    primaryFaded: 'rgba(59, 130, 246, 0.2)',
+    secondary: '#2563eb',
+    accent: '#f59e0b',
+    accentFaded: 'rgba(245, 158, 11, 0.2)',
+    icon: '#94a3b8',
+    tabIconDefault: '#94a3b8',
     tabIconSelected: tintColorDark,
+    border: '#334155',
+    borderCard: '#1e293b',
+    inputBg: '#1e293b',
+    success: '#22c55e',
+    successBg: 'rgba(34, 197, 94, 0.2)',
+    warning: '#f97316',
+    warningBg: 'rgba(249, 115, 22, 0.2)',
+    error: '#ef4444',
+    errorBg: 'rgba(239, 68, 68, 0.2)',
+    slate: {
+      50: '#f8fafc',
+      100: '#f1f5f9',
+      200: '#e2e8f0',
+      300: '#cbd5e1',
+      400: '#94a3b8',
+      500: '#64748b',
+      600: '#475569',
+      700: '#334155',
+      800: '#1e293b',
+      900: '#0f172a',
+    },
   },
+};
+
+export const Spacing = {
+  xs: 4,
+  sm: 8,
+  md: 12,
+  lg: 16,
+  xl: 20,
+  xxl: 24,
+  xxxl: 32,
+};
+
+export const BorderRadius = {
+  sm: 6,
+  md: 8,
+  lg: 12,
+  xl: 16,
+  xxl: 20,
+  full: 9999,
 };
 
 export const Fonts = Platform.select({
   ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
     sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
     serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
     rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
     mono: 'ui-monospace',
   },
   default: {
@@ -45,9 +120,16 @@ export const Fonts = Platform.select({
     mono: 'monospace',
   },
   web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', Helvetica, Arial, sans-serif",
     serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+    rounded: "'SF Pro Rounded', sans-serif",
+    mono: "SFMono-Regular, Menlo, Monaco, Consolas, monospace",
   },
 });
+
+/** Tailwind-style max widths (px): max-w-md=448, max-w-2xl=672, max-w-5xl=1024 */
+export const Layout = {
+  maxContentWidth: 448,
+  maxContentWidthWide: 672,
+  maxContentWidth5xl: 1024,
+};
